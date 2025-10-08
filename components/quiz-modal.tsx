@@ -227,7 +227,7 @@ export function QuizModal({ isOpen, onClose, onComplete }: QuizModalProps) {
 
             <div className="flex justify-center mt-12">
               <Button
-                size="lg"
+                size="2xl"
                 onClick={onComplete}
                 className="bg-green-500 hover:bg-green-600 text-white font-bold text-sm md:text-lg lg:text-xl px-6 md:px-10 lg:px-14 py-4 md:py-5 lg:py-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 w-full md:w-auto max-w-full text-center leading-normal whitespace-normal break-words"
               >
