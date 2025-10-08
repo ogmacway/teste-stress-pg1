@@ -155,7 +155,7 @@ export default function FerramentasPage() {
       <section className="bg-[#763a5b] py-12 md:py-20 px-4">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-5xl font-bold text-center mb-6 text-balance leading-tight">
-            <span className="text-white">Conheçs as </span>
+            <span className="text-white">Conheça as </span>
             <span className="text-[#FA4279]">FERRAMENTAS HOLÍSTICAS ANTI-STRESS</span>
             <span className="text-white"> e por que elas são um diferencial!</span>
           </h2>

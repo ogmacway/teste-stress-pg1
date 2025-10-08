@@ -229,7 +229,7 @@ export function QuizModal({ isOpen, onClose, onComplete }: QuizModalProps) {
               <Button
                 size="lg"
                 onClick={onComplete}
-                className="bg-green-500 hover:bg-green-600 text-white font-bold text-xl md:text-2xl px-12 md:px-16 py-6 md:py-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                className="bg-green-500 hover:bg-green-600 text-white font-bold text-sm md:text-lg lg:text-xl px-6 md:px-10 lg:px-14 py-4 md:py-5 lg:py-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 w-full md:w-auto max-w-full text-center leading-normal whitespace-normal break-words"
               >
                 SEGUIR PARA AS FERRAMENTAS SECRETAS
               </Button>
