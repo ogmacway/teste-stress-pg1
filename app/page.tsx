@@ -121,7 +121,7 @@ export default function Home() {
           </p>
 
           <Button
-            size="lg"
+            size="2xl"
             onClick={() => setIsQuizOpen(true)}
             className="bg-green-500 hover:bg-green-600 text-white font-bold text-base md:text-lg px-6 md:px-12 py-5 md:py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 w-full max-w-md mx-auto"
           >
