@@ -1,29 +1,49 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { Search } from "lucide-react"
 import Link from "next/link"
+import { useState } from "react"
+import { QuizModal } from "@/components/quiz-modal"
+import { useRouter } from "next/navigation"
 
 export default function Home() {
+  const [isQuizOpen, setIsQuizOpen] = useState(false)
+  const router = useRouter()
+
+  const handleQuizComplete = () => {
+    setIsQuizOpen(false)
+    router.push("/ferramentas")
+  }
+
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
       <section className="bg-[#763a5b] py-12 px-4 md:py-24">
         <div className="container mx-auto max-w-6xl">
-          <h1 className="text-[#FA4279] text-4xl md:text-6xl font-bold text-center mb-8">
-            <span className="block">Ferramentas Holísticas</span>
-            <span className="block">Anti-Stress</span>
+          <h1 className="text-center mb-8 md:mb-12">
+            <span className="block text-[#FA4279] text-4xl md:text-7xl font-bold mb-2 md:mb-4 tracking-tight leading-tight">
+              Ferramentas Holísticas
+            </span>
+            <span className="block text-[#FA4279] text-4xl md:text-7xl font-bold mb-4 md:mb-6 tracking-tight leading-tight">
+              Anti-Stress
+            </span>
           </h1>
 
           <div className="flex justify-center mb-8">
             <img
-              src="/hero2.png"
-              alt="O Segredo dos Terapeutas"
+              src="/hero3.png"
+              alt="A Cura do Século"
               className="w-full max-w-md md:max-w-lg rounded-lg shadow-2xl"
             />
           </div>
 
-          <p className="text-white text-lg md:text-2xl text-center text-balance px-2">
-            Conheça o segredo dos terapeutas para a cura da DOENÇA DO SÉCULO
-          </p>
+          <div className="max-w-3xl mx-auto bg-white/10 backdrop-blur-sm border-2 border-[#FA4279] rounded-2xl p-6 md:p-8 shadow-2xl">
+            <p className="text-white text-xl md:text-3xl text-center font-bold leading-relaxed">
+              Conheça o segredo dos terapeutas para a cura da{" "}
+              <span className="text-[#FA4279] text-2xl md:text-4xl font-extrabold">DOENÇA DO SÉCULO</span>
+            </p>
+          </div>
         </div>
       </section>
 
@@ -92,7 +112,7 @@ export default function Home() {
       {/* CTA Section */}
       <section className="bg-[#763a5b] py-12 md:py-16 px-4">
         <div className="container mx-auto max-w-4xl text-center">
-          <p className="text-xl md:text-3xl font-bold mb-8 leading-relaxed text-balance">
+          <p className="text-xl md:text-3xl font-bold mb-8 leading-relaxed text-balance px-2">
             <span className="text-[#FA4279]">CLIQUE E DESCUBRA A CURA!</span>{" "}
             <span className="text-white">
               O estresse está crescendo cada vez mais no mundo, e o segredo dos terapeutas holísticos está nas
@@ -102,9 +122,10 @@ export default function Home() {
 
           <Button
             size="lg"
-            className="bg-green-500 hover:bg-green-600 text-white font-bold text-base md:text-lg px-8 md:px-12 py-5 md:py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+            onClick={() => setIsQuizOpen(true)}
+            className="bg-green-500 hover:bg-green-600 text-white font-bold text-base md:text-lg px-6 md:px-12 py-5 md:py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 w-full max-w-md mx-auto"
           >
-            DESCOBRIR SEGREDO DOS TERAPEUTAS
+            <span className="text-center leading-tight">DESCOBRIR SEGREDO DOS TERAPEUTAS</span>
           </Button>
         </div>
       </section>
@@ -133,6 +154,8 @@ export default function Home() {
           </Link>
         </div>
       </section>
+
+      <QuizModal isOpen={isQuizOpen} onClose={() => setIsQuizOpen(false)} onComplete={handleQuizComplete} />
     </main>
   )
 }
