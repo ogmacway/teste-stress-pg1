@@ -386,7 +386,7 @@ export default function FerramentasPage() {
               <div className="flex justify-center mb-8">
                 <a href="https://go.pepperpay.com.br/zjsrf" target="_blank" rel="noopener noreferrer">
                   <Button
-                    size="lg"
+                    size="2xl"
                     className="bg-green-500 hover:bg-green-600 text-white font-bold text-base md:text-xl px-8 md:px-16 py-5 md:py-7 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
                   >
                     QUERO MINHAS FERRAMENTAS
