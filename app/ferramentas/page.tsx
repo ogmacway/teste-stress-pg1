@@ -160,7 +160,7 @@ export default function FerramentasPage() {
             <span className="text-white"> e por que elas são um diferencial!</span>
           </h2>
           <p className="text-white text-center text-lg md:text-xl mt-4 font-semibold">
-            ✅Aplicação imediata - ✅Acesso Vitalício - ✅Suporte no Whatsapp
+            ✅Aplicação imediata ✅Acesso Vitalício ✅Suporte no Whatsapp
           </p>
           <p className="text-white text-lg mt-6 md:text-2xl leading-7 font-normal text-center">
             São mais de 350 ferramentas reunidas em um ecossistema pronto para você utilizar! São Oráculos, Florais,
