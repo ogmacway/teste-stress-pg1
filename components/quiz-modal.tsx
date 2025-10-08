@@ -220,9 +220,9 @@ export function QuizModal({ isOpen, onClose, onComplete }: QuizModalProps) {
       <div className="relative bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
         {showThankYou ? (
           <div className="p-8 md:p-12 text-center">
-            <h2 className="text-3xl md:text-5xl font-bold text-[#763a5b] mb-4 leading-tight">Obrigado pela atenção,</h2>
+            <h2 className="text-3xl md:text-5xl font-bold text-[#763a5b] mb-4 leading-tight">Obrigado pela atenção.</h2>
             <h2 className="text-3xl md:text-5xl font-bold text-[#FA4279] mb-8 leading-tight">
-              isso fez toda a diferença!💜
+              Isso fez toda a diferença!💜
             </h2>
 
             <div className="flex justify-center mt-12">
