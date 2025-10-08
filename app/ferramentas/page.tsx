@@ -369,7 +369,7 @@ export default function FerramentasPage() {
 
               <div className="text-center mb-8">
                 <p className="text-red-600 font-bold text-base md:text-lg">
-                EXTRA - Suporte pessoal no WHATSAPP para quem adiquirir hoje!
+                🎁EXTRA - Suporte pessoal no WHATSAPP para quem adiquirir hoje!
                 </p>
               </div>
 
