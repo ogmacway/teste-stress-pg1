@@ -220,14 +220,14 @@ export function QuizModal({ isOpen, onClose, onComplete }: QuizModalProps) {
       <div className="relative bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
         {showThankYou ? (
           <div className="p-8 md:p-12 text-center">
-            <h2 className="text-3xl md:text-5xl font-bold text-[#763a5b] mb-4 leading-tight">Obrigado pela atenção.</h2>
+            <h2 className="text-3xl md:text-5xl font-bold text-[#763a5b] mb-4 leading-tight">Obrigado pela atenção,</h2>
             <h2 className="text-3xl md:text-5xl font-bold text-[#FA4279] mb-8 leading-tight">
-              Isso fez toda a diferença!💜
+              isso fez toda a diferença!💜
             </h2>
 
             <div className="flex justify-center mt-12">
               <Button
-                size="2xl"
+                size="lg"
                 onClick={onComplete}
                 className="bg-green-500 hover:bg-green-600 text-white font-bold text-sm md:text-lg lg:text-xl px-6 md:px-10 lg:px-14 py-4 md:py-5 lg:py-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 w-full md:w-auto max-w-full text-center leading-normal whitespace-normal break-words"
               >

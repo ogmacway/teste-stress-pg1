@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { Search } from "lucide-react"
+import { Search, ArrowDown } from "lucide-react"
 import Link from "next/link"
 import { useState } from "react"
 import { QuizModal } from "@/components/quiz-modal"
@@ -41,7 +41,9 @@ export default function Home() {
           <div className="max-w-3xl mx-auto bg-white/10 backdrop-blur-sm border-2 border-[#FA4279] rounded-2xl p-6 md:p-8 shadow-2xl">
             <p className="text-white text-xl md:text-3xl text-center font-bold leading-relaxed">
               Conheça o segredo dos terapeutas para a cura da{" "}
-              <span className="text-[#FA4279] text-2xl md:text-4xl font-extrabold">DOENÇA DO SÉCULO</span>
+              <span className="text-[#FA4279] text-2xl md:text-4xl font-extrabold whitespace-nowrap">
+                DOENÇA DO SÉCULO
+              </span>
             </p>
           </div>
         </div>
@@ -106,30 +108,26 @@ export default function Home() {
               holísticos para acabar com seu estresse ou de seus pacientes.
             </p>
           </div>
+
+          <div className="mt-12 text-center">
+            <div className="flex flex-col items-center gap-3 mb-6">
+              
+              <ArrowDown className="w-8 h-8 md:w-10 md:h-10 text-[#FA4279] animate-bounce" />
+            </div>
+            <Button
+              size="lg"
+              onClick={() => setIsQuizOpen(true)}
+              className="bg-green-500 hover:bg-green-600 text-white font-bold text-base md:text-lg px-6 md:px-12 py-5 md:py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 w-full max-w-md mx-auto"
+            >
+              <span className="text-center leading-tight">DESCOBRIR SEGREDO DOS TERAPEUTAS</span>
+            </Button>
+          </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="bg-[#763a5b] py-12 md:py-16 px-4">
-        <div className="container mx-auto max-w-4xl text-center">
-          <p className="text-xl md:text-3xl font-bold mb-8 leading-relaxed text-balance px-2">
-            <span className="text-[#FA4279]">CLIQUE E DESCUBRA A CURA!</span>{" "}
-            <span className="text-white">
-              O estresse está crescendo cada vez mais no mundo, e o segredo dos terapeutas holísticos está nas
-              ferramentas que eles utilizam para combater essa doença que atinge a maior parte da população
-            </span>
-          </p>
+      
 
-          <Button
-            size="2xl"
-            onClick={() => setIsQuizOpen(true)}
-            className="bg-green-500 hover:bg-green-600 text-white font-bold text-base md:text-lg px-6 md:px-12 py-5 md:py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 w-full max-w-md mx-auto"
-          >
-            <span className="text-center leading-tight">DESCOBRIR SEGREDO DOS TERAPEUTAS</span>
-          </Button>
-        </div>
-      </section>
-
+      {/* WhatsApp Section */}
       <section className="bg-white py-12 md:py-16 px-4">
         <div className="container mx-auto max-w-4xl text-center">
           <p className="text-black text-xl md:text-3xl font-bold mb-8 text-balance">

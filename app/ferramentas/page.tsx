@@ -160,7 +160,7 @@ export default function FerramentasPage() {
             <span className="text-white"> e por que elas são um diferencial!</span>
           </h2>
           <p className="text-white text-center text-lg md:text-xl mt-4 font-semibold">
-            ✅Aplicação imediata ✅Acesso Vitalício ✅Suporte no Whatsapp
+            ✅Aplicação imediata - ✅Acesso Vitalício - ✅Suporte no Whatsapp
           </p>
           <p className="text-white text-lg mt-6 md:text-2xl leading-7 font-normal text-center">
             São mais de 350 ferramentas reunidas em um ecossistema pronto para você utilizar! São Oráculos, Florais,
@@ -362,14 +362,14 @@ export default function FerramentasPage() {
               </div>
 
               <div className="flex justify-center mb-8">
-                <a href="https://go.pepperpay.com.br/dkjjv" target="_blank" rel="noopener noreferrer">
+                <a href="https://go.pepperpay.com.br/zjsrf" target="_blank" rel="noopener noreferrer">
                   
                 </a>
               </div>
 
               <div className="text-center mb-8">
                 <p className="text-red-600 font-bold text-base md:text-lg">
-                🎁EXTRA - Suporte pessoal no WHATSAPP para quem adiquirir hoje!
+                  🎁 BÔNUS EXTRA - Suporte pessoal no WHATSAPP para quem adiquirir hoje!
                 </p>
               </div>
 
@@ -384,9 +384,9 @@ export default function FerramentasPage() {
               </div>
 
               <div className="flex justify-center mb-8">
-                <a href="https://go.pepperpay.com.br/dkjjv" target="_blank" rel="noopener noreferrer">
+                <a href="https://go.pepperpay.com.br/zjsrf" target="_blank" rel="noopener noreferrer">
                   <Button
-                    size="2xl"
+                    size="lg"
                     className="bg-green-500 hover:bg-green-600 text-white font-bold text-base md:text-xl px-8 md:px-16 py-5 md:py-7 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
                   >
                     QUERO MINHAS FERRAMENTAS
