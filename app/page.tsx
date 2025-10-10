@@ -6,6 +6,7 @@ import Link from "next/link"
 import { useState } from "react"
 import { QuizModal } from "@/components/quiz-modal"
 import { useRouter } from "next/navigation"
+import { TextShimmer } from "@/components/ui/text-shimmer"
 
 export default function Home() {
   const [isQuizOpen, setIsQuizOpen] = useState(false)
@@ -22,12 +23,30 @@ export default function Home() {
       <section className="bg-[#763a5b] py-12 px-4 md:py-24">
         <div className="container mx-auto max-w-6xl">
           <h1 className="text-center mb-8 md:mb-12">
-            <span className="block text-[#FA4279] text-4xl md:text-7xl font-bold mb-2 md:mb-4 tracking-tight leading-tight">
+            <TextShimmer
+              as="span"
+              duration={3}
+              className="block text-[#FA4279] text-4xl md:text-7xl font-bold mb-2 md:mb-4 tracking-tight leading-tight drop-shadow-[0_0_25px_rgba(250,66,121,0.8)]"
+              style={{
+                textShadow:
+                  "0 0 20px rgba(250, 66, 121, 0.8), 0 0 40px rgba(250, 66, 121, 0.6), 0 0 60px rgba(250, 66, 121, 0.4)",
+                WebkitTextStroke: "1px rgba(139, 0, 69, 0.5)",
+              }}
+            >
               Ferramentas Holísticas
-            </span>
-            <span className="block text-[#FA4279] text-4xl md:text-7xl font-bold mb-4 md:mb-6 tracking-tight leading-tight">
+            </TextShimmer>
+            <TextShimmer
+              as="span"
+              duration={3}
+              className="block text-[#FA4279] text-4xl md:text-7xl font-bold mb-4 md:mb-6 tracking-tight leading-tight drop-shadow-[0_0_25px_rgba(250,66,121,0.8)]"
+              style={{
+                textShadow:
+                  "0 0 20px rgba(250, 66, 121, 0.8), 0 0 40px rgba(250, 66, 121, 0.6), 0 0 60px rgba(250, 66, 121, 0.4)",
+                WebkitTextStroke: "1px rgba(139, 0, 69, 0.5)",
+              }}
+            >
               Anti-Stress
-            </span>
+            </TextShimmer>
           </h1>
 
           <div className="flex justify-center mb-8">
@@ -111,7 +130,6 @@ export default function Home() {
 
           <div className="mt-12 text-center">
             <div className="flex flex-col items-center gap-3 mb-6">
-              
               <ArrowDown className="w-8 h-8 md:w-10 md:h-10 text-[#FA4279] animate-bounce" />
             </div>
             <Button
@@ -124,8 +142,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      
 
       {/* WhatsApp Section */}
       <section className="bg-white py-12 md:py-16 px-4">
